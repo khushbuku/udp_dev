@@ -11,7 +11,8 @@ datagroup: udp_dev_default_datagroup {
 persist_with: udp_dev_default_datagroup
 
 map_layer: my_neighborhood_layer {
-  file: "//udp_dev/maps/output.json"
+  # file: "//udp_dev/maps/output.json"
+  file: "@{map_layer}"
   format: topojson
   feature_key: "BEL_adm1"
   property_key: "HASC_1"

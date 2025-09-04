@@ -10,3 +10,7 @@ project_name: "udp_dev"
 # local_dependency: {
 #   project: "rchavan_test"
 # }
+
+constant: map_layer {
+  value: "//udp_dev/maps/output.json"
+}
