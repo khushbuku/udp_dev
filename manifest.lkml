@@ -13,4 +13,5 @@ project_name: "udp_dev"
 
 constant: map_layer {
   value: "//udp_dev/maps/output.json"
+  export: override_optional
 }
