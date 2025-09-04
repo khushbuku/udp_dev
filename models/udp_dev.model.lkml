@@ -13,11 +13,19 @@ persist_with: udp_dev_default_datagroup
 map_layer: my_neighborhood_layer {
   # file: "//udp_dev/maps/output.json"
   file: "@{map_layer}"
-  format: topojson
-  feature_key: "BEL_adm1"
-  property_key: "HASC_1"
-  property_label_key: "NAME_1"
+  format: "@{format}"
+  feature_key: "@{feature_key}"
+  property_key: "@{property_key}"
+  property_label_key: "@{property_label_key}"
 }
+
+# map_layer: my_neighborhood_layer {
+#   file: "//udp_dev/maps/output.json"
+#   format: topojson
+#   feature_key: "BEL_adm1"
+#   property_key: "HASC_1"
+#   property_label_key: "NAME_1"
+# }
 
 explore: billion_orders {
   join: orders {
