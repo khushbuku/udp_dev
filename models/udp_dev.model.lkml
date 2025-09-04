@@ -12,6 +12,10 @@ persist_with: udp_dev_default_datagroup
 
 map_layer: my_neighborhood_layer {
   file: "//udp_dev/maps/output.json"
+  format: topojson
+  feature_key: "BEL_adm1"
+  property_key: "HASC_1"
+  property_label_key: "NAME_1"
 }
 
 explore: billion_orders {
@@ -333,3 +337,5 @@ explore: xss_test_7 {}
 explore: xss_test_8 {}
 
 explore: xss_test_9 {}
+
+explore: postcodedev {}
